@@ -1,0 +1,27 @@
+{
+  "name": "operation-failed",
+  "version": "1.0.0",
+  "description": "A UI element that can be used to indicate that the operation was unsuccessful.",
+  "main": "operation-failed.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vajahath/operation-failed.git"
+  },
+  "keywords": [
+    "Polymer",
+    "web-components",
+    "user",
+    "interface",
+    "ui",
+    "custom-elements"
+  ],
+  "author": "twitter.com/vajahath7",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vajahath/operation-failed/issues"
+  },
+  "homepage": "https://github.com/vajahath/operation-failed#readme"
+}

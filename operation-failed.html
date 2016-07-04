@@ -1,0 +1,84 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<dom-module id="operation-failed">
+	<template>
+
+		<style>
+		.holder {
+			padding: 70px 0px 0px 300px;
+		}
+		
+		.red {
+			background-color: #ff5c57;
+			color: #FFF;
+			font-size: 70px;
+			padding: 18px 0px 0px 10px;
+			border-radius: 15px;
+			width: 118px;
+			height: 118px;
+			text-align: center;
+		}
+
+		.alert-danger {
+			color: #ff5c57;
+			background-color: #ffdbda;
+			border-color: #ffa3a0;
+		}
+		</style>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-offset-1 col-md-11">
+					<div class="row">
+						<div class="col-md-2 col-sm-2 red">
+							<span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span>
+						</div>
+						<div class="col-md-5 col-sm-7">
+							<p style="color:#ff5c57;">{{header}}</p>
+							<h3 style="color:#696969; margin-top: 8px;">{{title}}</h3>
+							<div class="alert alert-danger" role="alert">
+								<p>{{info}}<strong> {{info_bold}}</strong></p>
+							</div>
+							<a href="{{button_href}}" class="btn btn-success pull-right"><span class="glyphicon glyphicon-repeat" aria-hidden="true"></span> {{button_name}}</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+	</template>
+
+	<script>
+	Polymer({
+
+		is: 'operation-failed',
+
+		properties: {
+			header: {
+				type: String,
+				value: "We're sorry,",
+			},
+			title: {
+				type: String,
+				value: "Something went wrong !"
+			},
+			info_bold: {
+				type: String,
+				value: "Failed"
+			},
+			info:{
+				type: String,
+				value: "File upload "
+			},
+			button_name: {
+				type: String,
+				value: " Retry"
+			},
+			button_href:{
+				type: String,
+				value: "http://www.google.com"
+			}
+		},
+	});
+	</script>
+</dom-module>
