@@ -111,12 +111,16 @@ Attributes      | Type        | Default value            | Description
 
 Feel free to ping me on Skype at `vajuinside`.
 
+If you found any issues, [file an issue on Github](https://github.com/vajahath/operation-failed/issues).
+
 visit my [profile](https://www.npmjs.com/~vaju) to see other elements.
 
 bye..
 
 
 ## Change Log
+*1.0.2*
+* Anonymous documentation update.
 
 *1.0.1*
 * New image in the documentation.
